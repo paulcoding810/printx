@@ -22,10 +22,10 @@ class PrintSelectedTextAction : AnAction() {
         val caretModel = editor.caretModel
 
         // Determine the variable name to use
-        val varName = selectedText ?: "x"
+        val varName = selectedText ?: return
 
         // Create the println statement
-        val printStatement = "println(\"🚀 ~ $varName: \$$varName\")\n"
+        val printStatement = $$"println(\"🚀 ~ $$varName: $$$varName\")"
 
         // Get the current line and calculate proper indentation
         val caretOffset = caretModel.offset
