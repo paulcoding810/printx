@@ -1,0 +1,17 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.paulcoding.intellij.printx</id>
+    <name>PrintX</name>
+    <vendor>Paulcoding</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="com.paulcoding.intellij.printx.actions.PrintSelectedTextAction"
+                class="com.paulcoding.intellij.printx.actions.PrintSelectedTextAction"
+                text="Print Selected Text"
+                description="Prints the selected text in the format: println('🚀 ~ x: $x')">
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt L"/>
+        </action>
+    </actions>
+</idea-plugin>
